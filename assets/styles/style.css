@@ -98,15 +98,20 @@ nav a {
 #sobre #sobre-cont {
     width: 35%;
 }
-#sobre h2 {
+#sobre h2, #servicos h2, #portfolio h2 {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-    color: #6051C7;
-    font-size: 48px;
+    color: #6051C7;    
     font-weight: 400;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 40px;
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -116,20 +121,16 @@ p {
 .icons img {
     margin-left: 25px;
 }
-.servicos {
+#servicos {
     height: 955px;
     box-sizing: border-box;
     padding: 20px;
 }
-.servicos #title-servicos {
+#servicos h2 {
     text-align: center;
     width: 100%;
 }
-.servicos h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.servicos #conteudo {
+#servicos #conteudo {
     display: flex;
     flex-wrap: wrap;
 }
@@ -162,7 +163,47 @@ p {
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
-
+#portfolio {
+    height: 955px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#portfolio h2 {
+    text-align: center;
+    width: 100%;
+}
+#portfolio #conteudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#portfolio #conteudo #arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    margin-top: 12%;
+}
+#portfolio #conteudo #arrows img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+#portfolio #conteudo #arrows span:first-child {
+    transform: rotate(180deg);
+    margin-left: 200px;
+}
+#portfolio #conteudo #arrows span:last-child {
+    margin-right: 200px;
+}
+#portfolio #banner-portfolio {
+    width: 100%;
+    max-width: 930px;
+    height: auto;
+}
+#portfolio h3 {
+    margin: 30px 0;
+}
 @media(max-width: 1680px) {
     header {
         height: 710px
