@@ -22,3 +22,21 @@ $(window).on("scroll", function() {
       $(".topbar").removeClass("top-color");
     }
 });
+
+var slidershow = document.getElementsById("slidershow");
+
+// Slide
+
+function switchSlide(x) {
+    var clique = x;
+    var margem = $('.slidershow').css("margin-left");
+    var limite = -3700;
+    margem = parseFloat(margem.replace('px', ''));
+
+    if(clique == 1 && margem > 0 ||clique == 2 && margem < limite) {   
+    } else if(clique == 1) {
+        document.getElementById("slidershow").style.marginLeft = margem + 3750 + "px";
+    } else {
+        document.getElementById("slidershow").style.marginLeft = margem - 3750 + "px";
+    }
+}
