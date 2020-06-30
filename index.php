@@ -85,17 +85,23 @@
             <span onClick="switchSlide(2)"><img src="assets/images/next.svg" alt="Passar slide"/></span>
         </div>
         <div class="slidershow" id="slidershow">
-            <div class="slide">
+            <div class="slide" id="slide">
                 <img id="banner-portfolio" src="assets/images/projeto.png" alt="Projeto Ecoleta">
                 <h3>Ecoleta</h3>
                 <p>O Ecoleta foi criado para facilitar a coleta seletiva nas cidades do Brasil, sendo possível pesquisar por cidade os pontos de coleta disponíveis. Além disso, é possível cadastrar novos pontos de coleta por Estado/Cidade.</p>
             </div>
-            <div class="slide">
+            <div class="slide" id="slide">
                 <img id="banner-portfolio" src="assets/images/bethehero.jpeg" alt="Projeto Be The Hero">
                 <h3>Be The Hero</h3>
                 <p>O Be The Hero é um projeto desenvolvido para ajudar ONGS a divulgarem casos em que elas precisem de ajuda financeira.</p>
             </div>
-            <div class="slide">
+            <div class="slide" id="slide">
+                <img id="banner-portfolio" src="assets/images/930x508.png" alt="CRUD">
+                <h3>CRUD em PHP</h3>
+                <p>Sistema simples de controle de usuários onde é possível inserir, excluir, modificar e exibir usuários de um Banco de Dados MYSQL através de consultas realizadas com PHP.</br></br></p>
+                <p>Para testar basta instalar o dump que está no diretório em um Banco de Dados MYSQL e alterar o destino e usuário no arquivo config.php.</p>
+            </div>
+            <div class="slide" id="slide">
                 <img id="banner-portfolio" src="assets/images/930x508.png" alt="CRUD">
                 <h3>CRUD em PHP</h3>
                 <p>Sistema simples de controle de usuários onde é possível inserir, excluir, modificar e exibir usuários de um Banco de Dados MYSQL através de consultas realizadas com PHP.</br></br></p>

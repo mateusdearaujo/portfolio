@@ -23,20 +23,36 @@ $(window).on("scroll", function() {
     }
 });
 
-var slidershow = document.getElementsById("slidershow");
+// Pega o valor em px do left e retorna em número real
 
-// Slide
+function conv(posicao) {
+    var variavel = $(`#slide:nth-child(${posicao})`).css("left");
+    variavel = parseFloat(variavel.replace('px', ''));
+    return variavel;
+}
+
+// Função do slider
 
 function switchSlide(x) {
     var clique = x;
-    var margem = $('.slidershow').css("margin-left");
-    var limite = -3700;
-    margem = parseFloat(margem.replace('px', ''));
 
-    if(clique == 1 && margem > 0 ||clique == 2 && margem < limite) {   
-    } else if(clique == 1) {
-        document.getElementById("slidershow").style.marginLeft = margem + 3750 + "px";
-    } else {
-        document.getElementById("slidershow").style.marginLeft = margem - 3750 + "px";
+    var divs = $('.slide');
+
+    var qtd = divs.length;
+
+    var ultimo = conv(qtd);
+
+    var primeiro = conv(1);
+
+    for(var z = 1; z <= qtd; z++) {
+        var margem = conv(z);
+
+        if(clique == 1 && ultimo > 0) {
+            margem = (margem - 1920) + "px";
+            $(`#slide:nth-child(${z})`).css('left', `${margem}`);
+        } else if(clique == 2 && primeiro < 0) {
+            margem = (margem + 1920) + "px";
+            $(`#slide:nth-child(${z})`).css('left', `${margem}`);
+        }
     }
 }

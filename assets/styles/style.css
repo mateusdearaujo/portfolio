@@ -41,6 +41,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body { 
+    overflow-x: hidden;
+}
 .container {
     max-width: 1200px;
     margin: auto;
@@ -220,15 +223,30 @@ p {
 }
 #slidershow {
     display: flex;
-    transition: all 1s;
+    width: 100%;
 }
-#portfolio .slide {
+#portfolio #slide {
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    width: 1867px;
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    transition: all 1s;
 }
+#slide:nth-child(1) {
+    left: 0;    
+}
+#slide:nth-child(2) { 
+    left: 1920px;
+}
+#slide:nth-child(3) {
+    left: calc(1920px * 2);
+}
+#slide:nth-child(4) { 
+    left: calc(1920px * 3);
+}
+
 @media(max-width: 1680px) {
     header {
         height: 710px
