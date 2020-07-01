@@ -23,29 +23,23 @@ $(window).on("scroll", function() {
     }
 });
 
-// Pega o valor em px do left e retorna em número real
+// Pega o valor em px do left do slide e retorna em número real
 
-function conv(posicao) {
-    var variavel = $(`#slide:nth-child(${posicao})`).css("left");
-    variavel = parseFloat(variavel.replace('px', ''));
-    return variavel;
+function leftInt(pos) {
+    var x = $(`#slide:nth-child(${pos})`).css("left");
+    return x = parseFloat(x.replace('px', ''));
 }
 
 // Função do slider
 
 function switchSlide(x) {
     var clique = x;
-
-    var divs = $('.slide');
-
-    var qtd = divs.length;
-
-    var ultimo = conv(qtd);
-
-    var primeiro = conv(1);
+	var qtd = $('.slide').length;
+    var ultimo = leftInt(qtd);
+    var primeiro = leftInt(1);
 
     for(var z = 1; z <= qtd; z++) {
-        var margem = conv(z);
+        var margem = leftInt(z);
 
         if(clique == 1 && ultimo > 0) {
             margem = (margem - 1920) + "px";

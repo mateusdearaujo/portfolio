@@ -81,8 +81,8 @@
     </div>
     <div id="conteudo">
         <div id="arrows">
-            <span onClick="switchSlide(1)"><img src="assets/images/next.svg" alt="Passar slide"/></span>
             <span onClick="switchSlide(2)"><img src="assets/images/next.svg" alt="Passar slide"/></span>
+            <span onClick="switchSlide(1)"><img src="assets/images/next.svg" alt="Passar slide"/></span>
         </div>
         <div class="slidershow" id="slidershow">
             <div class="slide" id="slide">
@@ -108,6 +108,36 @@
                 <p>Para testar basta instalar o dump que está no diretório em um Banco de Dados MYSQL e alterar o destino e usuário no arquivo config.php.</p>
             </div>
         </div>
+    </div>
+</article>
+<article id="contato">
+    <div>
+        <h2>Contato</h2>
+    </div>
+    <div id="formulario">
+        <form action="">
+            <div>
+                Nome:</br>
+                <input type="text" name="name"></br>
+            </div>
+            <div>
+                E-mail:</br>
+                <input type="email" name="email"></br>
+            </div>
+            <div>
+                Telefone:</br>
+                <input type="text" name="tel"></br>
+            </div>
+            <div>
+                Assunto:</br>
+                <input type="text" name="subject"></br>
+            </div>
+            <div>
+                Mensagem:</br>
+                <input type="text" name="text">
+                <input type="submit" value="Enviar mensagem">
+            </div>
+        </form>
     </div>
 </article>
 <footer>
