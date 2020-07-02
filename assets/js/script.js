@@ -1,4 +1,4 @@
-// Efeito de transição com o "menu âncora"
+//	Efeito de transição com o "menu âncora"
 
 $('a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
@@ -10,7 +10,7 @@ $('a[href^="#"]').on('click', function(e) {
 	}, 1000);
 });
 
-//  Altera a cor da barra do top
+//	Altera a cor da barra do top
 
 $(window).on("scroll", function() {
     var windowHeight = $(window).scrollTop();
@@ -23,7 +23,7 @@ $(window).on("scroll", function() {
     }
 });
 
-// Pega o valor em px do left do slide e retorna em número real
+// Pega o valor css left do slide e retorna em número real
 
 function leftInt(pos) {
     var x = $(`#slide:nth-child(${pos})`).css("left");
