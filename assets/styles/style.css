@@ -41,6 +41,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 body { 
     overflow-x: hidden;
 }
@@ -113,7 +118,7 @@ h2 {
 h3 {
     font-size: 40px;
 }
-p {
+p, span {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -257,19 +262,57 @@ p {
     justify-content: center;
 }
 #contato input[type=text], input[type=email]  {
-    width: 80%;
+    width: 100%;
     padding: 10px;
 }
 #contato input[name=text] {
     width: 100%;
 }
-#contato input[type=submit] {
-    width: 100%;
-}
 #contato form {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
     width: 80%;
+}
+#contato form span {
+	margin-bottom: 10px;
+    display: block;
+}
+#contato form #form-input {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#contato form #form-input div {
+	padding: 20px;
+}
+#contato form #form-text div {
+	padding-left: 18px;
+}
+#contato form #form-text textarea {
+	width: 100%;
+	resize: none;
+}
+textarea:focus {
+	border: 1px solid #6051C7;
+}
+input:focus {
+	border: 1px solid #6051C7;
+}
+#contato form #form-text input[type=submit] {
+	width: 10%;
+	padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: #FFFFFF;
+    color: #000;
+    margin-top: 10px;
+}
+#contato form #form-text input[type=submit]:hover {
+	border: 1px solid #6051C7;
+	color: #6051C7;
+	cursor: pointer;
+}
+#contato {
+	background: url("../images/contato.svg") no-repeat;
+    background-position: 30vw 50vh;
+    background-size: 800px;
 }
 @media(max-width: 1680px) {
     header {

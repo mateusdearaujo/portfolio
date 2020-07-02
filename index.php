@@ -116,28 +116,32 @@
     </div>
     <div id="formulario">
         <form action="">
-            <div>
-                Nome:</br>
-                <input type="text" name="name"></br>
-            </div>
-            <div>
-                E-mail:</br>
-                <input type="email" name="email"></br>
-            </div>
-            <div>
-                Telefone:</br>
-                <input type="text" name="tel"></br>
-            </div>
-            <div>
-                Assunto:</br>
-                <input type="text" name="subject"></br>
-            </div>
-            <div>
-                Mensagem:</br>
-                <input type="text" name="text">
-                <input type="submit" value="Enviar mensagem">
-            </div>
-        </form>
+			<div id="form-input">
+				<div>
+					<span>Nome:</br></span>
+					<input type="text" name="name">
+				</div>
+				<div>
+					<span>E-mail:</br></span>
+					<input type="email" name="email"></br>
+				</div>
+				<div>	
+					<span>Telefone:</br></span>
+					<input type="text" name="tel"></br>
+				</div>
+				<div>
+					<span>Assunto:</br></span>
+					<input type="text" name="subject"></br>
+				</div>
+			</div>
+			<div id="form-text">	
+				<div>
+					<span>Mensagem:</br></span>
+					<textarea rows="6"></textarea>
+					<input type="submit" value="Enviar mensagem">
+				</div>
+			</div>
+		</form>
     </div>
 </article>
 <footer>
