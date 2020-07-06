@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Mateus Araujo</title>
+	<title>Portfólio - Mateus Araujo</title>
+	<meta name="description" content="Portfólio Mateus Araujo">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
@@ -22,15 +23,16 @@
             </a>
             <a href="#top" id="arrow-top">
                 <img src="assets/images/up-arrow.svg" alt="ícone topo" height="40" width="40">
-            </a>
+			</a>
+			<img onclick="menuSlide()" id="menu" src="assets/images/menu.svg" alt="Menu" width="30" height="30"/>
         </div>
         <nav>
             <ul class="nav">
                 <li>Home</li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a onclick="menuSlideClose()" href="#sobre">Sobre</a></li>
+                <li><a onclick="menuSlideClose()" href="#servicos">Serviços</a></li>
+                <li><a onclick="menuSlideClose()" href="#portfolio">Portfólio</a></li>
+                <li><a onclick="menuSlideClose()" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -145,7 +147,7 @@
     </div>
 </article>
 <footer>
-
+	<span>Feito por <a href="https://www.linkedin.com/in/mateusdearaujo/" target="_blank">Mateus Araujo</a></span>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
