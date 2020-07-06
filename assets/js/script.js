@@ -10,7 +10,25 @@ $('a[href^="#"]').on('click', function(e) {
 	}, 1000);
 });
 
-//	Altera a cor da barra do top
+// Função do menu responsivo
+
+function menuSlide() {
+	var marginLeft = $('nav').css("margin-left");
+
+	if(marginLeft == "756px") {
+		$('nav').css('margin-left', '0');
+	} else {
+		$('nav').css('margin-left', '756px');
+	}
+}
+
+// Fechar menu ao clikar no link âncora
+
+function menuSlideClose() {
+	$('nav').css('margin-left', '756px');
+}
+
+// Altera a cor da barra do top
 
 $(window).on("scroll", function() {
     var windowHeight = $(window).scrollTop();
@@ -33,7 +51,7 @@ function leftInt(pos) {
 // Função do slider
 
 function switchSlide(x) {
-    var clique = x;
+	var clique = x;
 	var qtd = $('.slide').length;
     var ultimo = leftInt(qtd);
     var primeiro = leftInt(1);
